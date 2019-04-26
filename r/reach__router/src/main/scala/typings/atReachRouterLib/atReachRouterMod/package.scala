@@ -6,13 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atReachRouterMod {
-  type AnchorProps = Omit[
-    reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.AnchorHTMLAttributes[stdLib.HTMLAnchorElement], 
-      stdLib.HTMLAnchorElement
-    ], 
-    atReachRouterLib.atReachRouterLibStrings.href
-  ]
   type HistoryListener = js.Function1[/* parameter */ HistoryListenerParameter, scala.Unit]
   type HistoryLocation = WindowLocation with atReachRouterLib.Anon_State
   type HistoryUnsubscribe = js.Function0[scala.Unit]

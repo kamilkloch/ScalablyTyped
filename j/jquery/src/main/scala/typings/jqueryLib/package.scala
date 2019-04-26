@@ -44,8 +44,6 @@ package object jqueryLib {
     */
   // tslint:disable-next-line:no-empty-interface
   type JQuerySupport = jqueryLib.JQueryNs.PlainObject[js.Any]
-  // tslint:disable-next-line:no-empty-interface
-  type JQueryXHR = jqueryLib.JQueryNs.jqXHR[js.Any]
   type _Event = stdLib.Event
   type _FocusEvent = stdLib.FocusEvent
   type _KeyboardEvent = stdLib.KeyboardEvent

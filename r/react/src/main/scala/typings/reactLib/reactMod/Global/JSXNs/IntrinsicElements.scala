@@ -671,60 +671,10 @@ object IntrinsicElements {
     td: reactLib.reactMod.DetailedHTMLProps[
       reactLib.reactMod.TdHTMLAttributes[reactLib.HTMLTableDataCellElement], 
       reactLib.HTMLTableDataCellElement
-    ],
-    text: reactLib.reactMod.SVGProps[reactLib.SVGTextElement],
-    textPath: reactLib.reactMod.SVGProps[reactLib.SVGTextPathElement],
-    textarea: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement], 
-      reactLib.HTMLTextAreaElement
-    ],
-    tfoot: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableSectionElement], 
-      reactLib.HTMLTableSectionElement
-    ],
-    th: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.ThHTMLAttributes[reactLib.HTMLTableHeaderCellElement], 
-      reactLib.HTMLTableHeaderCellElement
-    ],
-    thead: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableSectionElement], 
-      reactLib.HTMLTableSectionElement
-    ],
-    time: reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.TimeHTMLAttributes[reactLib.HTMLElement], reactLib.HTMLElement],
-    title: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTitleElement], 
-      reactLib.HTMLTitleElement
-    ],
-    tr: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTableRowElement], 
-      reactLib.HTMLTableRowElement
-    ],
-    track: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.TrackHTMLAttributes[reactLib.HTMLTrackElement], 
-      reactLib.HTMLTrackElement
-    ],
-    tspan: reactLib.reactMod.SVGProps[reactLib.SVGTSpanElement],
-    u: reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLElement], reactLib.HTMLElement],
-    ul: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.HTMLAttributes[reactLib.HTMLUListElement], 
-      reactLib.HTMLUListElement
-    ],
-    use: reactLib.reactMod.SVGProps[reactLib.SVGUseElement],
-    `var`: reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLElement], reactLib.HTMLElement],
-    video: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.VideoHTMLAttributes[reactLib.HTMLVideoElement], 
-      reactLib.HTMLVideoElement
-    ],
-    view: reactLib.reactMod.SVGProps[reactLib.SVGViewElement],
-    wbr: reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLElement], reactLib.HTMLElement],
-    webview: reactLib.reactMod.DetailedHTMLProps[
-      reactLib.reactMod.WebViewHTMLAttributes[reactLib.HTMLWebViewElement], 
-      reactLib.HTMLWebViewElement
     ]
   ): IntrinsicElements = {
-    val __obj = js.Dynamic.literal(a = a, abbr = abbr, address = address, animate = animate, animateMotion = animateMotion, animateTransform = animateTransform, area = area, article = article, aside = aside, audio = audio, b = b, base = base, bdi = bdi, bdo = bdo, big = big, blockquote = blockquote, body = body, br = br, button = button, canvas = canvas, caption = caption, circle = circle, cite = cite, clipPath = clipPath, code = code, col = col, colgroup = colgroup, data = data, datalist = datalist, dd = dd, defs = defs, del = del, desc = desc, details = details, dfn = dfn, dialog = dialog, div = div, dl = dl, dt = dt, ellipse = ellipse, em = em, embed = embed, feBlend = feBlend, feColorMatrix = feColorMatrix, feComponentTransfer = feComponentTransfer, feComposite = feComposite, feConvolveMatrix = feConvolveMatrix, feDiffuseLighting = feDiffuseLighting, feDisplacementMap = feDisplacementMap, feDistantLight = feDistantLight, feDropShadow = feDropShadow, feFlood = feFlood, feFuncA = feFuncA, feFuncB = feFuncB, feFuncG = feFuncG, feFuncR = feFuncR, feGaussianBlur = feGaussianBlur, feImage = feImage, feMerge = feMerge, feMergeNode = feMergeNode, feMorphology = feMorphology, feOffset = feOffset, fePointLight = fePointLight, feSpecularLighting = feSpecularLighting, feSpotLight = feSpotLight, feTile = feTile, feTurbulence = feTurbulence, fieldset = fieldset, figcaption = figcaption, figure = figure, filter = filter, footer = footer, foreignObject = foreignObject, form = form, g = g, h1 = h1, h2 = h2, h3 = h3, h4 = h4, h5 = h5, h6 = h6, head = head, header = header, hgroup = hgroup, hr = hr, html = html, i = i, iframe = iframe, image = image, img = img, input = input, ins = ins, kbd = kbd, keygen = keygen, label = label, legend = legend, li = li, line = line, linearGradient = linearGradient, link = link, main = main, map = map, mark = mark, marker = marker, mask = mask, menu = menu, menuitem = menuitem, meta = meta, metadata = metadata, meter = meter, mpath = mpath, nav = nav, noindex = noindex, noscript = noscript, ol = ol, optgroup = optgroup, option = option, output = output, p = p, param = param, path = path, pattern = pattern, picture = picture, polygon = polygon, polyline = polyline, pre = pre, progress = progress, q = q, radialGradient = radialGradient, rect = rect, rp = rp, rt = rt, ruby = ruby, s = s, samp = samp, script = script, section = section, select = select, small = small, source = source, span = span, stop = stop, strong = strong, style = style, sub = sub, summary = summary, sup = sup, svg = svg, switch = switch, symbol = symbol, table = table, tbody = tbody, td = td, text = text, textPath = textPath, textarea = textarea, tfoot = tfoot, th = th, thead = thead, time = time, title = title, tr = tr, track = track, tspan = tspan, u = u, ul = ul, use = use, video = video, view = view, wbr = wbr, webview = webview)
+    val __obj = js.Dynamic.literal(a = a, abbr = abbr, address = address, animate = animate, animateMotion = animateMotion, animateTransform = animateTransform, area = area, article = article, aside = aside, audio = audio, b = b, base = base, bdi = bdi, bdo = bdo, big = big, blockquote = blockquote, body = body, br = br, button = button, canvas = canvas, caption = caption, circle = circle, cite = cite, clipPath = clipPath, code = code, col = col, colgroup = colgroup, data = data, datalist = datalist, dd = dd, defs = defs, del = del, desc = desc, details = details, dfn = dfn, dialog = dialog, div = div, dl = dl, dt = dt, ellipse = ellipse, em = em, embed = embed, feBlend = feBlend, feColorMatrix = feColorMatrix, feComponentTransfer = feComponentTransfer, feComposite = feComposite, feConvolveMatrix = feConvolveMatrix, feDiffuseLighting = feDiffuseLighting, feDisplacementMap = feDisplacementMap, feDistantLight = feDistantLight, feDropShadow = feDropShadow, feFlood = feFlood, feFuncA = feFuncA, feFuncB = feFuncB, feFuncG = feFuncG, feFuncR = feFuncR, feGaussianBlur = feGaussianBlur, feImage = feImage, feMerge = feMerge, feMergeNode = feMergeNode, feMorphology = feMorphology, feOffset = feOffset, fePointLight = fePointLight, feSpecularLighting = feSpecularLighting, feSpotLight = feSpotLight, feTile = feTile, feTurbulence = feTurbulence, fieldset = fieldset, figcaption = figcaption, figure = figure, filter = filter, footer = footer, foreignObject = foreignObject, form = form, g = g, h1 = h1, h2 = h2, h3 = h3, h4 = h4, h5 = h5, h6 = h6, head = head, header = header, hgroup = hgroup, hr = hr, html = html, i = i, iframe = iframe, image = image, img = img, input = input, ins = ins, kbd = kbd, keygen = keygen, label = label, legend = legend, li = li, line = line, linearGradient = linearGradient, link = link, main = main, map = map, mark = mark, marker = marker, mask = mask, menu = menu, menuitem = menuitem, meta = meta, metadata = metadata, meter = meter, mpath = mpath, nav = nav, noindex = noindex, noscript = noscript, ol = ol, optgroup = optgroup, option = option, output = output, p = p, param = param, path = path, pattern = pattern, picture = picture, polygon = polygon, polyline = polyline, pre = pre, progress = progress, q = q, radialGradient = radialGradient, rect = rect, rp = rp, rt = rt, ruby = ruby, s = s, samp = samp, script = script, section = section, select = select, small = small, source = source, span = span, stop = stop, strong = strong, style = style, sub = sub, summary = summary, sup = sup, svg = svg, switch = switch, symbol = symbol, table = table, tbody = tbody, td = td)
     __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("var")(`var`)
     __obj.asInstanceOf[IntrinsicElements]
   }
 }

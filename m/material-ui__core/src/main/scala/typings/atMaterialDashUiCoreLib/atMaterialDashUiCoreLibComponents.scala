@@ -324,7 +324,11 @@ object atMaterialDashUiCoreLibComponents {
   @scala.inline
   def DialogActionsProps: atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps.type = atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps
   type DialogActionsProps = atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps
+  @scala.inline
+  def DialogContentProps: atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps.type = atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps
   type DialogContentProps = atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps
+  @scala.inline
+  def DialogContentTextProps: atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps.type = atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
   type DialogContentTextProps = atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
   @scala.inline
   def DialogProps: atMaterialDashUiCoreLib.dialogDialogMod.DialogProps.type = atMaterialDashUiCoreLib.dialogDialogMod.DialogProps
@@ -338,7 +342,11 @@ object atMaterialDashUiCoreLibComponents {
   @scala.inline
   def DrawerProps: atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps.type = atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps
   type DrawerProps = atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps
+  @scala.inline
+  def ExpansionPanelActionsProps: atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps.type = atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
   type ExpansionPanelActionsProps = atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
+  @scala.inline
+  def ExpansionPanelDetailsProps: atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps.type = atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
   type ExpansionPanelDetailsProps = atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
   @scala.inline
   def ExpansionPanelProps: atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps.type = atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps
@@ -412,6 +420,8 @@ object atMaterialDashUiCoreLibComponents {
   @scala.inline
   def LinkProps: atMaterialDashUiCoreLib.linkLinkMod.LinkProps.type = atMaterialDashUiCoreLib.linkLinkMod.LinkProps
   type LinkProps = atMaterialDashUiCoreLib.linkLinkMod.LinkProps
+  @scala.inline
+  def ListItemAvatarProps: atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps.type = atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps
   type ListItemAvatarProps = atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps
   @scala.inline
   def ListItemIconProps: atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps.type = atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps
@@ -419,6 +429,8 @@ object atMaterialDashUiCoreLibComponents {
   @scala.inline
   def ListItemProps: atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps.type = atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps
   type ListItemProps = atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps
+  @scala.inline
+  def ListItemSecondaryActionProps: atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps.type = atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
   type ListItemSecondaryActionProps = atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
   @scala.inline
   def ListItemTextProps: atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps.type = atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps
@@ -558,6 +570,8 @@ object atMaterialDashUiCoreLibComponents {
   @scala.inline
   def TabsProps: atMaterialDashUiCoreLib.tabsTabsMod.TabsProps.type = atMaterialDashUiCoreLib.tabsTabsMod.TabsProps
   type TabsProps = atMaterialDashUiCoreLib.tabsTabsMod.TabsProps
+  @scala.inline
+  def TextFieldProps: atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps.type = atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps
   type TextFieldProps = atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps
   @scala.inline
   def ToolbarProps: atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps.type = atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps

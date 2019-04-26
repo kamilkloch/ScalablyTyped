@@ -44,6 +44,11 @@ package object reactMod {
     /* repeated */ ReactNode, 
     DOMElement[P, T]
   ]
+  // Any prop that has a default prop becomes optional, but its type is unchanged
+  // Undeclared default props are augmented into the resulting allowable attributes
+  // If declared props have indexed properties, ignore default props entirely as keyof gets widened
+  // Wrap in an outer-level conditional type to allow distribution over props that are unions
+  type Defaultize[P, D] = ((stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]]) with (stdLib.Partial[stdLib.Pick[P, stdLib.Extract[java.lang.String, java.lang.String]]]) with (stdLib.Partial[stdLib.Pick[D, stdLib.Exclude[java.lang.String, java.lang.String]]])) | P
   // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
   // TODO (TypeScript 3.0): ReadonlyArray<unknown>
   type DependencyList = js.Array[js.Any]
@@ -58,11 +63,12 @@ package object reactMod {
   //
   // React Elements
   // ----------------------------------------------------------------------
-  type ElementType[P] = scala.Nothing | ComponentType[P]
+  type ElementType[P] = (/* import warning: ImportType.apply Failed type conversion: {[ K in 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' ]: P extends react.react.Global.JSX.IntrinsicElements[K]? K : never}['a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view'] */ js.Any) | ComponentType[P]
   //
   // Event Handler Types
   // ----------------------------------------------------------------------
   type EventHandler[E /* <: SyntheticEvent[_, reactLib.Event] */] = js.Function1[/* event */ E, scala.Unit]
+  type ExactlyAnyPropertyKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: react.react.IsExactlyAny<T[K]> extends true? K : never}[keyof T] */ js.Any
   type FC[P] = FunctionComponent[P]
   //
   // Factories
@@ -100,6 +106,8 @@ package object reactMod {
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
   type LegacyRef[T] = java.lang.String | Ref[T]
+  // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
+  type MergePropTypes[P, T] = ((stdLib.Pick[P, reactLib.NotExactlyAnyPropertyKeys[P]]) with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, reactLib.NotExactlyAnyPropertyKeys[P]]]) with (stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]])) | P | T
   type MouseEventHandler[T] = EventHandler[MouseEvent[T, reactLib.NativeMouseEvent]]
   type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
   /**
@@ -117,7 +125,7 @@ package object reactMod {
   ]
   type PropsWithChildren[P] = P with reactLib.Anon_Children
   /** Ensures that the props do not include string ref, which cannot be forwarded */
-  type PropsWithRef[P] = P | (PropsWithoutRef[P] with reactLib.Anon_Ref)
+  type PropsWithRef[P] = P | (PropsWithoutRef[P] with reactLib.Anon_RefAny)
   /** Ensures that the props do not include ref at all */
   type PropsWithoutRef[P] = P | (stdLib.Pick[P, stdLib.Exclude[java.lang.String, reactLib.reactLibStrings.ref]])
   // NOTE: only the Context object itself can get a displayName
@@ -134,6 +142,7 @@ package object reactMod {
   // Component API
   // ----------------------------------------------------------------------
   type ReactInstance = (Component[js.Any, js.Object, js.Any]) | reactLib.Element
+  type ReactManagedAttributes[C, P] = P | (Defaultize[P, js.Any]) | (MergePropTypes[P, propDashTypesLib.propDashTypesMod.InferProps[js.Any]]) | (Defaultize[MergePropTypes[P, propDashTypesLib.propDashTypesMod.InferProps[js.Any]], js.Any])
   type ReactNode = js.UndefOr[ReactChild | ReactFragment | ReactPortal | scala.Boolean | scala.Null]
   //
   // React Nodes
@@ -200,7 +209,7 @@ package object reactMod {
   // ----------------------------------------------------------------------
   type Validator[T] = propDashTypesLib.propDashTypesMod.Validator[T]
   type WeakValidationMap[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? react.react.Validator<T[K]> | react.react.Validator<T[K] | null | undefined>}
+  {[ K in keyof T ]:? null extends T[K]? react.react.Validator<T[K] | null | undefined> : undefined extends T[K]? react.react.Validator<T[K] | null | undefined> : react.react.Validator<T[K]>}
     */ reactLib.reactLibStrings.WeakValidationMap with js.Any
   type WheelEventHandler[T] = EventHandler[WheelEvent[T]]
 }

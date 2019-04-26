@@ -13,9 +13,6 @@ object jqueryLibStrings {
   sealed trait Promise extends js.Object
   
   @js.native
-  sealed trait _TypeEventHandlers extends js.Object
-  
-  @js.native
   sealed trait abort
     extends jqueryLib.JQueryNs.AjaxNs.ErrorTextStatus
   
@@ -64,9 +61,6 @@ object jqueryLibStrings {
   sealed trait function extends js.Object
   
   @js.native
-  sealed trait get extends js.Object
-  
-  @js.native
   sealed trait html extends js.Object
   
   @js.native
@@ -83,9 +77,6 @@ object jqueryLibStrings {
   
   @js.native
   sealed trait keyup extends js.Object
-  
-  @js.native
-  sealed trait left extends js.Object
   
   @js.native
   sealed trait mousedown extends js.Object
@@ -154,9 +145,6 @@ object jqueryLibStrings {
   sealed trait select extends js.Object
   
   @js.native
-  sealed trait set extends js.Object
-  
-  @js.native
   sealed trait slow
     extends jqueryLib.JQueryNs._Duration
   
@@ -181,9 +169,6 @@ object jqueryLibStrings {
     extends jqueryLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
-  sealed trait top extends js.Object
-  
-  @js.native
   sealed trait touchcancel extends js.Object
   
   @js.native
@@ -205,8 +190,6 @@ object jqueryLibStrings {
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
-  def _TypeEventHandlers: _TypeEventHandlers = "_TypeEventHandlers".asInstanceOf[_TypeEventHandlers]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
@@ -238,8 +221,6 @@ object jqueryLibStrings {
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
@@ -251,8 +232,6 @@ object jqueryLibStrings {
   def keypress: keypress = "keypress".asInstanceOf[keypress]
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
   @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
@@ -296,8 +275,6 @@ object jqueryLibStrings {
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
   def slow: slow = "slow".asInstanceOf[slow]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
@@ -311,8 +288,6 @@ object jqueryLibStrings {
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
   @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   @scala.inline

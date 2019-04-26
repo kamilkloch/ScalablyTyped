@@ -99,7 +99,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-delay
     */
-  var `animation-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `animation-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -125,7 +125,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-duration
     */
-  var `animation-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `animation-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -1418,7 +1418,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-grow
     */
-  var `flex-grow`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `flex-grow`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
     *
@@ -1431,7 +1431,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-shrink
     */
-  var `flex-shrink`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `flex-shrink`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
     *
@@ -2627,7 +2627,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/opacity
     */
-  var opacity: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var opacity: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
     *
@@ -2640,7 +2640,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/order
     */
-  var order: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var order: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
     *
@@ -2652,7 +2652,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/orphans
     */
-  var orphans: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var orphans: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`outline-color`** CSS property sets the color of an element's outline.
     *
@@ -3509,7 +3509,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold
     */
-  var `shape-image-threshold`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `shape-image-threshold`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
     *
@@ -3677,7 +3677,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-position
     */
-  var `text-emphasis-position`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `text-emphasis-position`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
     *
@@ -3886,7 +3886,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-delay
     */
-  var `transition-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `transition-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
@@ -3899,7 +3899,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-duration
     */
-  var `transition-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `transition-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -4010,7 +4010,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/widows
     */
-  var widows: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var widows: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`width`** CSS property sets an element's width. By default it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.
     *
@@ -4115,9 +4115,9 @@ object StandardLonghandPropertiesHyphen {
     `align-content`: AlignContentProperty = null,
     `align-items`: AlignItemsProperty = null,
     `align-self`: AlignSelfProperty = null,
-    `animation-delay`: csstypeLib.GlobalsString = null,
+    `animation-delay`: GlobalsString = null,
     `animation-direction`: AnimationDirectionProperty = null,
-    `animation-duration`: csstypeLib.GlobalsString = null,
+    `animation-duration`: GlobalsString = null,
     `animation-fill-mode`: AnimationFillModeProperty = null,
     `animation-iteration-count`: AnimationIterationCountProperty = null,
     `animation-name`: AnimationNameProperty = null,
@@ -4216,8 +4216,8 @@ object StandardLonghandPropertiesHyphen {
     filter: FilterProperty = null,
     `flex-basis`: FlexBasisProperty[TLength] = null,
     `flex-direction`: FlexDirectionProperty = null,
-    `flex-grow`: csstypeLib.GlobalsNumber = null,
-    `flex-shrink`: csstypeLib.GlobalsNumber = null,
+    `flex-grow`: GlobalsNumber = null,
+    `flex-shrink`: GlobalsNumber = null,
     `flex-wrap`: FlexWrapProperty = null,
     float: FloatProperty = null,
     `font-family`: FontFamilyProperty = null,
@@ -4265,107 +4265,7 @@ object StandardLonghandPropertiesHyphen {
     `justify-items`: JustifyItemsProperty = null,
     `justify-self`: JustifySelfProperty = null,
     left: LeftProperty[TLength] = null,
-    `letter-spacing`: LetterSpacingProperty[TLength] = null,
-    `line-break`: LineBreakProperty = null,
-    `line-height`: LineHeightProperty[TLength] = null,
-    `line-height-step`: LineHeightStepProperty[TLength] = null,
-    `list-style-image`: ListStyleImageProperty = null,
-    `list-style-position`: ListStylePositionProperty = null,
-    `list-style-type`: ListStyleTypeProperty = null,
-    `margin-block`: MarginBlockProperty[TLength] = null,
-    `margin-block-end`: MarginBlockEndProperty[TLength] = null,
-    `margin-block-start`: MarginBlockStartProperty[TLength] = null,
-    `margin-bottom`: MarginBottomProperty[TLength] = null,
-    `margin-inline`: MarginInlineProperty[TLength] = null,
-    `margin-inline-end`: MarginInlineEndProperty[TLength] = null,
-    `margin-inline-start`: MarginInlineStartProperty[TLength] = null,
-    `margin-left`: MarginLeftProperty[TLength] = null,
-    `margin-right`: MarginRightProperty[TLength] = null,
-    `margin-top`: MarginTopProperty[TLength] = null,
-    `mask-border-mode`: MaskBorderModeProperty = null,
-    `mask-border-outset`: MaskBorderOutsetProperty[TLength] = null,
-    `mask-border-repeat`: MaskBorderRepeatProperty = null,
-    `mask-border-slice`: MaskBorderSliceProperty = null,
-    `mask-border-source`: MaskBorderSourceProperty = null,
-    `mask-border-width`: MaskBorderWidthProperty[TLength] = null,
-    `mask-clip`: MaskClipProperty = null,
-    `mask-composite`: MaskCompositeProperty = null,
-    `mask-image`: MaskImageProperty = null,
-    `mask-mode`: MaskModeProperty = null,
-    `mask-origin`: MaskOriginProperty = null,
-    `mask-position`: MaskPositionProperty[TLength] = null,
-    `mask-repeat`: MaskRepeatProperty = null,
-    `mask-size`: MaskSizeProperty[TLength] = null,
-    `mask-type`: MaskTypeProperty = null,
-    `max-block-size`: MaxBlockSizeProperty[TLength] = null,
-    `max-height`: MaxHeightProperty[TLength] = null,
-    `max-inline-size`: MaxInlineSizeProperty[TLength] = null,
-    `max-lines`: MaxLinesProperty = null,
-    `max-width`: MaxWidthProperty[TLength] = null,
-    `min-block-size`: MinBlockSizeProperty[TLength] = null,
-    `min-height`: MinHeightProperty[TLength] = null,
-    `min-inline-size`: MinInlineSizeProperty[TLength] = null,
-    `min-width`: MinWidthProperty[TLength] = null,
-    `mix-blend-mode`: MixBlendModeProperty = null,
-    `motion-distance`: OffsetDistanceProperty[TLength] = null,
-    `motion-path`: OffsetPathProperty = null,
-    `motion-rotation`: OffsetRotateProperty = null,
-    `object-fit`: ObjectFitProperty = null,
-    `object-position`: ObjectPositionProperty[TLength] = null,
-    `offset-anchor`: OffsetAnchorProperty[TLength] = null,
-    `offset-distance`: OffsetDistanceProperty[TLength] = null,
-    `offset-path`: OffsetPathProperty = null,
-    `offset-position`: OffsetPositionProperty[TLength] = null,
-    `offset-rotate`: OffsetRotateProperty = null,
-    `offset-rotation`: OffsetRotateProperty = null,
-    opacity: csstypeLib.GlobalsNumber = null,
-    order: csstypeLib.GlobalsNumber = null,
-    orphans: csstypeLib.GlobalsNumber = null,
-    `outline-color`: OutlineColorProperty = null,
-    `outline-offset`: OutlineOffsetProperty[TLength] = null,
-    `outline-style`: OutlineStyleProperty = null,
-    `outline-width`: OutlineWidthProperty[TLength] = null,
-    overflow: OverflowProperty = null,
-    `overflow-anchor`: OverflowAnchorProperty = null,
-    `overflow-block`: OverflowBlockProperty = null,
-    `overflow-clip-box`: OverflowClipBoxProperty = null,
-    `overflow-inline`: OverflowInlineProperty = null,
-    `overflow-wrap`: OverflowWrapProperty = null,
-    `overflow-x`: OverflowXProperty = null,
-    `overflow-y`: OverflowYProperty = null,
-    `overscroll-behavior`: OverscrollBehaviorProperty = null,
-    `overscroll-behavior-x`: OverscrollBehaviorXProperty = null,
-    `overscroll-behavior-y`: OverscrollBehaviorYProperty = null,
-    `padding-block`: PaddingBlockProperty[TLength] = null,
-    `padding-block-end`: PaddingBlockEndProperty[TLength] = null,
-    `padding-block-start`: PaddingBlockStartProperty[TLength] = null,
-    `padding-bottom`: PaddingBottomProperty[TLength] = null,
-    `padding-inline`: PaddingInlineProperty[TLength] = null,
-    `padding-inline-end`: PaddingInlineEndProperty[TLength] = null,
-    `padding-inline-start`: PaddingInlineStartProperty[TLength] = null,
-    `padding-left`: PaddingLeftProperty[TLength] = null,
-    `padding-right`: PaddingRightProperty[TLength] = null,
-    `padding-top`: PaddingTopProperty[TLength] = null,
-    `page-break-after`: PageBreakAfterProperty = null,
-    `page-break-before`: PageBreakBeforeProperty = null,
-    `page-break-inside`: PageBreakInsideProperty = null,
-    `paint-order`: PaintOrderProperty = null,
-    perspective: PerspectiveProperty[TLength] = null,
-    `perspective-origin`: PerspectiveOriginProperty[TLength] = null,
-    `place-content`: PlaceContentProperty = null,
-    `pointer-events`: PointerEventsProperty = null,
-    position: PositionProperty = null,
-    quotes: QuotesProperty = null,
-    resize: ResizeProperty = null,
-    right: RightProperty[TLength] = null,
-    rotate: RotateProperty = null,
-    `row-gap`: RowGapProperty[TLength] = null,
-    `ruby-align`: RubyAlignProperty = null,
-    `ruby-merge`: RubyMergeProperty = null,
-    `ruby-position`: RubyPositionProperty = null,
-    scale: ScaleProperty = null,
-    `scroll-behavior`: ScrollBehaviorProperty = null,
-    `scroll-margin`: ScrollMarginProperty[TLength] = null
+    `letter-spacing`: LetterSpacingProperty[TLength] = null
   ): StandardLonghandPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`align-content` != null) __obj.updateDynamic("align-content")(`align-content`.asInstanceOf[js.Any])
@@ -4522,106 +4422,6 @@ object StandardLonghandPropertiesHyphen {
     if (`justify-self` != null) __obj.updateDynamic("justify-self")(`justify-self`.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (`letter-spacing` != null) __obj.updateDynamic("letter-spacing")(`letter-spacing`.asInstanceOf[js.Any])
-    if (`line-break` != null) __obj.updateDynamic("line-break")(`line-break`)
-    if (`line-height` != null) __obj.updateDynamic("line-height")(`line-height`.asInstanceOf[js.Any])
-    if (`line-height-step` != null) __obj.updateDynamic("line-height-step")(`line-height-step`.asInstanceOf[js.Any])
-    if (`list-style-image` != null) __obj.updateDynamic("list-style-image")(`list-style-image`.asInstanceOf[js.Any])
-    if (`list-style-position` != null) __obj.updateDynamic("list-style-position")(`list-style-position`)
-    if (`list-style-type` != null) __obj.updateDynamic("list-style-type")(`list-style-type`.asInstanceOf[js.Any])
-    if (`margin-block` != null) __obj.updateDynamic("margin-block")(`margin-block`.asInstanceOf[js.Any])
-    if (`margin-block-end` != null) __obj.updateDynamic("margin-block-end")(`margin-block-end`.asInstanceOf[js.Any])
-    if (`margin-block-start` != null) __obj.updateDynamic("margin-block-start")(`margin-block-start`.asInstanceOf[js.Any])
-    if (`margin-bottom` != null) __obj.updateDynamic("margin-bottom")(`margin-bottom`.asInstanceOf[js.Any])
-    if (`margin-inline` != null) __obj.updateDynamic("margin-inline")(`margin-inline`.asInstanceOf[js.Any])
-    if (`margin-inline-end` != null) __obj.updateDynamic("margin-inline-end")(`margin-inline-end`.asInstanceOf[js.Any])
-    if (`margin-inline-start` != null) __obj.updateDynamic("margin-inline-start")(`margin-inline-start`.asInstanceOf[js.Any])
-    if (`margin-left` != null) __obj.updateDynamic("margin-left")(`margin-left`.asInstanceOf[js.Any])
-    if (`margin-right` != null) __obj.updateDynamic("margin-right")(`margin-right`.asInstanceOf[js.Any])
-    if (`margin-top` != null) __obj.updateDynamic("margin-top")(`margin-top`.asInstanceOf[js.Any])
-    if (`mask-border-mode` != null) __obj.updateDynamic("mask-border-mode")(`mask-border-mode`)
-    if (`mask-border-outset` != null) __obj.updateDynamic("mask-border-outset")(`mask-border-outset`.asInstanceOf[js.Any])
-    if (`mask-border-repeat` != null) __obj.updateDynamic("mask-border-repeat")(`mask-border-repeat`.asInstanceOf[js.Any])
-    if (`mask-border-slice` != null) __obj.updateDynamic("mask-border-slice")(`mask-border-slice`.asInstanceOf[js.Any])
-    if (`mask-border-source` != null) __obj.updateDynamic("mask-border-source")(`mask-border-source`.asInstanceOf[js.Any])
-    if (`mask-border-width` != null) __obj.updateDynamic("mask-border-width")(`mask-border-width`.asInstanceOf[js.Any])
-    if (`mask-clip` != null) __obj.updateDynamic("mask-clip")(`mask-clip`.asInstanceOf[js.Any])
-    if (`mask-composite` != null) __obj.updateDynamic("mask-composite")(`mask-composite`.asInstanceOf[js.Any])
-    if (`mask-image` != null) __obj.updateDynamic("mask-image")(`mask-image`.asInstanceOf[js.Any])
-    if (`mask-mode` != null) __obj.updateDynamic("mask-mode")(`mask-mode`.asInstanceOf[js.Any])
-    if (`mask-origin` != null) __obj.updateDynamic("mask-origin")(`mask-origin`.asInstanceOf[js.Any])
-    if (`mask-position` != null) __obj.updateDynamic("mask-position")(`mask-position`.asInstanceOf[js.Any])
-    if (`mask-repeat` != null) __obj.updateDynamic("mask-repeat")(`mask-repeat`.asInstanceOf[js.Any])
-    if (`mask-size` != null) __obj.updateDynamic("mask-size")(`mask-size`.asInstanceOf[js.Any])
-    if (`mask-type` != null) __obj.updateDynamic("mask-type")(`mask-type`)
-    if (`max-block-size` != null) __obj.updateDynamic("max-block-size")(`max-block-size`.asInstanceOf[js.Any])
-    if (`max-height` != null) __obj.updateDynamic("max-height")(`max-height`.asInstanceOf[js.Any])
-    if (`max-inline-size` != null) __obj.updateDynamic("max-inline-size")(`max-inline-size`.asInstanceOf[js.Any])
-    if (`max-lines` != null) __obj.updateDynamic("max-lines")(`max-lines`.asInstanceOf[js.Any])
-    if (`max-width` != null) __obj.updateDynamic("max-width")(`max-width`.asInstanceOf[js.Any])
-    if (`min-block-size` != null) __obj.updateDynamic("min-block-size")(`min-block-size`.asInstanceOf[js.Any])
-    if (`min-height` != null) __obj.updateDynamic("min-height")(`min-height`.asInstanceOf[js.Any])
-    if (`min-inline-size` != null) __obj.updateDynamic("min-inline-size")(`min-inline-size`.asInstanceOf[js.Any])
-    if (`min-width` != null) __obj.updateDynamic("min-width")(`min-width`.asInstanceOf[js.Any])
-    if (`mix-blend-mode` != null) __obj.updateDynamic("mix-blend-mode")(`mix-blend-mode`)
-    if (`motion-distance` != null) __obj.updateDynamic("motion-distance")(`motion-distance`.asInstanceOf[js.Any])
-    if (`motion-path` != null) __obj.updateDynamic("motion-path")(`motion-path`.asInstanceOf[js.Any])
-    if (`motion-rotation` != null) __obj.updateDynamic("motion-rotation")(`motion-rotation`.asInstanceOf[js.Any])
-    if (`object-fit` != null) __obj.updateDynamic("object-fit")(`object-fit`)
-    if (`object-position` != null) __obj.updateDynamic("object-position")(`object-position`.asInstanceOf[js.Any])
-    if (`offset-anchor` != null) __obj.updateDynamic("offset-anchor")(`offset-anchor`.asInstanceOf[js.Any])
-    if (`offset-distance` != null) __obj.updateDynamic("offset-distance")(`offset-distance`.asInstanceOf[js.Any])
-    if (`offset-path` != null) __obj.updateDynamic("offset-path")(`offset-path`.asInstanceOf[js.Any])
-    if (`offset-position` != null) __obj.updateDynamic("offset-position")(`offset-position`.asInstanceOf[js.Any])
-    if (`offset-rotate` != null) __obj.updateDynamic("offset-rotate")(`offset-rotate`.asInstanceOf[js.Any])
-    if (`offset-rotation` != null) __obj.updateDynamic("offset-rotation")(`offset-rotation`.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (orphans != null) __obj.updateDynamic("orphans")(orphans.asInstanceOf[js.Any])
-    if (`outline-color` != null) __obj.updateDynamic("outline-color")(`outline-color`.asInstanceOf[js.Any])
-    if (`outline-offset` != null) __obj.updateDynamic("outline-offset")(`outline-offset`.asInstanceOf[js.Any])
-    if (`outline-style` != null) __obj.updateDynamic("outline-style")(`outline-style`.asInstanceOf[js.Any])
-    if (`outline-width` != null) __obj.updateDynamic("outline-width")(`outline-width`.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (`overflow-anchor` != null) __obj.updateDynamic("overflow-anchor")(`overflow-anchor`)
-    if (`overflow-block` != null) __obj.updateDynamic("overflow-block")(`overflow-block`.asInstanceOf[js.Any])
-    if (`overflow-clip-box` != null) __obj.updateDynamic("overflow-clip-box")(`overflow-clip-box`)
-    if (`overflow-inline` != null) __obj.updateDynamic("overflow-inline")(`overflow-inline`.asInstanceOf[js.Any])
-    if (`overflow-wrap` != null) __obj.updateDynamic("overflow-wrap")(`overflow-wrap`)
-    if (`overflow-x` != null) __obj.updateDynamic("overflow-x")(`overflow-x`)
-    if (`overflow-y` != null) __obj.updateDynamic("overflow-y")(`overflow-y`)
-    if (`overscroll-behavior` != null) __obj.updateDynamic("overscroll-behavior")(`overscroll-behavior`.asInstanceOf[js.Any])
-    if (`overscroll-behavior-x` != null) __obj.updateDynamic("overscroll-behavior-x")(`overscroll-behavior-x`)
-    if (`overscroll-behavior-y` != null) __obj.updateDynamic("overscroll-behavior-y")(`overscroll-behavior-y`)
-    if (`padding-block` != null) __obj.updateDynamic("padding-block")(`padding-block`.asInstanceOf[js.Any])
-    if (`padding-block-end` != null) __obj.updateDynamic("padding-block-end")(`padding-block-end`.asInstanceOf[js.Any])
-    if (`padding-block-start` != null) __obj.updateDynamic("padding-block-start")(`padding-block-start`.asInstanceOf[js.Any])
-    if (`padding-bottom` != null) __obj.updateDynamic("padding-bottom")(`padding-bottom`.asInstanceOf[js.Any])
-    if (`padding-inline` != null) __obj.updateDynamic("padding-inline")(`padding-inline`.asInstanceOf[js.Any])
-    if (`padding-inline-end` != null) __obj.updateDynamic("padding-inline-end")(`padding-inline-end`.asInstanceOf[js.Any])
-    if (`padding-inline-start` != null) __obj.updateDynamic("padding-inline-start")(`padding-inline-start`.asInstanceOf[js.Any])
-    if (`padding-left` != null) __obj.updateDynamic("padding-left")(`padding-left`.asInstanceOf[js.Any])
-    if (`padding-right` != null) __obj.updateDynamic("padding-right")(`padding-right`.asInstanceOf[js.Any])
-    if (`padding-top` != null) __obj.updateDynamic("padding-top")(`padding-top`.asInstanceOf[js.Any])
-    if (`page-break-after` != null) __obj.updateDynamic("page-break-after")(`page-break-after`)
-    if (`page-break-before` != null) __obj.updateDynamic("page-break-before")(`page-break-before`)
-    if (`page-break-inside` != null) __obj.updateDynamic("page-break-inside")(`page-break-inside`)
-    if (`paint-order` != null) __obj.updateDynamic("paint-order")(`paint-order`.asInstanceOf[js.Any])
-    if (perspective != null) __obj.updateDynamic("perspective")(perspective.asInstanceOf[js.Any])
-    if (`perspective-origin` != null) __obj.updateDynamic("perspective-origin")(`perspective-origin`.asInstanceOf[js.Any])
-    if (`place-content` != null) __obj.updateDynamic("place-content")(`place-content`.asInstanceOf[js.Any])
-    if (`pointer-events` != null) __obj.updateDynamic("pointer-events")(`pointer-events`)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (`row-gap` != null) __obj.updateDynamic("row-gap")(`row-gap`.asInstanceOf[js.Any])
-    if (`ruby-align` != null) __obj.updateDynamic("ruby-align")(`ruby-align`)
-    if (`ruby-merge` != null) __obj.updateDynamic("ruby-merge")(`ruby-merge`)
-    if (`ruby-position` != null) __obj.updateDynamic("ruby-position")(`ruby-position`)
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (`scroll-behavior` != null) __obj.updateDynamic("scroll-behavior")(`scroll-behavior`)
-    if (`scroll-margin` != null) __obj.updateDynamic("scroll-margin")(`scroll-margin`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardLonghandPropertiesHyphen[TLength]]
   }
 }

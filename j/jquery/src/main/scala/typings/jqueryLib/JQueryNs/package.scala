@@ -12,19 +12,12 @@ package object JQueryNs {
     * `jQuery.fx.step` functions are being replaced by `jQuery.Tween.propHooks` and may eventually be removed, but are still supported via the default tween propHook.
     */
   type AnimationHook[TElement] = js.Function1[/* fx */ Tween[TElement], scala.Unit]
-  // #endregion
-  // region CSS hooks
-  // #region CSS hooks
-  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CSSHook[TElement] = stdLib.Partial[_CSSHook[TElement]] with ((stdLib.Pick[_CSSHook[TElement], jqueryLib.jqueryLibStrings.get]) | (stdLib.Pick[_CSSHook[TElement], jqueryLib.jqueryLibStrings.set]))
   type CSSHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   org.scalablytyped.runtime.StringDictionary[CSSHook[stdLib.HTMLElement]]
   // #endregion
   // region Callbacks
   // #region Callbacks
   type CallbacksStatic = js.Function1[/* flags */ js.UndefOr[java.lang.String], Callbacks[js.Function]]
-  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CoordinatesPartial = (stdLib.Pick[Coordinates, jqueryLib.jqueryLibStrings.left]) | (stdLib.Pick[Coordinates, jqueryLib.jqueryLibStrings.top]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Effects
   // #region Effects
@@ -122,9 +115,6 @@ package object JQueryNs {
   type _Falsy = js.UndefOr[
     jqueryLib.jqueryLibNumbers.`false` | scala.Null | jqueryLib.jqueryLibNumbers.`0` | jqueryLib.jqueryLibStrings.Empty | stdLib.HTMLAllCollection
   ]
-  type _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ TType in keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> ]:? jquery.JQuery.TypeEventHandler<TDelegateTarget, TData, TCurrentTarget, TTarget, TType> | false | object}
-    */ jqueryLib.jqueryLibStrings._TypeEventHandlers with js.Any
   /**
     * A string is designated htmlString in jQuery documentation when it is used to represent one or more DOM elements, typically to be created and inserted in the document. When passed as an argument of the jQuery() function, the string is identified as HTML if it starts with <tag ... >) and is parsed as such until the final > character. Prior to jQuery 1.9, a string was considered to be HTML if it contained <tag ... > anywhere within the string.
     */
